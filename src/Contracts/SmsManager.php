@@ -1,6 +1,6 @@
 <?php
 
-namespace Yasin\Sms\Contracts;
+namespace Jl\Sms\Contracts;
 
 interface SmsManager
 {

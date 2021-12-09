@@ -1,10 +1,10 @@
 <?php
 
-namespace Yasin\Sms;
+namespace Jl\Sms;
 
 use Illuminate\Support\ServiceProvider;
-use Yasin\Sms\Contracts\SmsManager;
-use Yasin\Sms\SendSms;
+use Jl\Sms\Contracts\SmsManager;
+use Jl\Sms\SendSms;
 
 class SmsServiceProvider extends ServiceProvider
 {
@@ -16,7 +16,7 @@ class SmsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/sms.php' => config_path('sms.php'),
-        ], 'sms-config');
+            __DIR__.'/config/jl-sms.php' => config_path('jl-sms.php'),
+        ], 'jl-sms-config');
     }
 }

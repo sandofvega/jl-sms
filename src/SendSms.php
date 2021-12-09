@@ -1,8 +1,8 @@
 <?php
 
-namespace Yasin\Sms;
+namespace Jl\Sms;
 
-use Yasin\Sms\Contracts\SmsManager;
+use Jl\Sms\Contracts\SmsManager;
 
 class SendSms implements SmsManager
 {
@@ -33,7 +33,7 @@ class SendSms implements SmsManager
 
     public function send()
     {
-        $operator = config('sms.default_operator');
+        $operator = config('jl-sms.default_operator');
         
         // sending sms
 
