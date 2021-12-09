@@ -1,5 +1,17 @@
 {
-    "require": {
-        "illuminate/support": "^4.2"
+    "name": "yasin/sms",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yasin\\Sms\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yasin\\Sms\\SmsServiceProvider"
+            ]
+        }
     }
 }
